@@ -1,0 +1,71 @@
+*{
+    font-family: "poppins",sans-serif;
+}
+.wrapper{
+    background-image:url('../assets/toga.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+  
+}
+.wrapper h2{
+    font-size: 50px;
+    margin-bottom: 130px;
+    font-weight: bold;
+}
+
+.Card{
+    padding-top: 20px;
+    margin: 30px;
+    display: inline-flex;
+    flex-flow: wrap;
+    /* padding: 20px 110px; */
+}
+.item_tanaman img {
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    max-width: 200px; 
+    max-height: 200px;
+    
+    
+}
+.item_tanaman{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.item_tanaman h3{
+    font-size:medium;
+
+}
+.item_tanaman a{
+    color: rgb(251, 251, 251);
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+.add a{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.countainer{
+    width: 100%;
+    height: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+.footer {
+    text-align: center;
+    background-color: rgb(128, 245, 69);
+}
+.edit{
+    margin-right: 5px;
+}
