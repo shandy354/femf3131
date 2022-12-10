@@ -3,7 +3,6 @@ import { Card, Row } from "react-bootstrap";
 import config from "../config/config";
 import axios from "axios";
 
-
 class Detail extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +29,7 @@ class Detail extends Component {
     return (
       <div>
         <Row xs={1} md={2} className="g-4">
-          <Card border="light" style={{ width: "42rem"}}>
+          <Card border="light" style={{ width: "42rem" }}>
             <Card.Img
               variant="top"
               src={config.ROOT_URL + "/public/" + this.state.item_tanaman.img}
@@ -43,11 +42,16 @@ class Detail extends Component {
               <h4>{this.state.item_tanaman.kategori}</h4>
               <h4>Lokasi {this.state.item_tanaman.lokasi}</h4>
               <Card.Text>{this.state.item_tanaman.deskripsi}</Card.Text>
+              {/* <Card.Img
+              style={{ width: "16rem", height: "55vh" }}
+              variant="top"
+              src={config.ROOT_URL + "/public/" + this.state.item_tanaman.lokasi}
+              alt="Gambar tanaman"
+            /> */}
             </Card.Body>
           </Card>
         </Row>
       </div>
-    
     );
   }
 }

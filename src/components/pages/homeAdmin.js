@@ -5,10 +5,11 @@ import config from "../config/config";
 import { Link } from "react-router-dom";
 
 export default class HomeAdmin extends Component {
+  
   state = {
     item: [],
   };
-  // axios.get(config.ROOT_URL + "/tanaman/item")
+
   getApi = () => {
     axios.get(config.ROOT_URL + "/tanaman/item").then((result) => {
       console.log("produk tnaman >>", result);
@@ -30,9 +31,11 @@ export default class HomeAdmin extends Component {
         <div className="Card">
           {this.state.item.map((item) => (
             <DetilAdminTanaman
-              key={item.id}
+              key={item.uuid}
               image={config.ROOT_URL + "/public/" + item.img}
               nama={item.nama}
+              edit={item.id}
+              
             />
           ))}
         </div>

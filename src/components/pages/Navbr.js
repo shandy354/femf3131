@@ -9,6 +9,7 @@ import LoginAdmin from "./loginAdmin";
 import Homepage from "./Homepage";
 import HomeAdmin from "./homeAdmin";
 import Add from "./AddTanaman";
+import Edit from "./editAdmin";
 export default class Navbr extends Component {
   render() {
     return (
@@ -59,6 +60,8 @@ export default class Navbr extends Component {
               <Route path="/loginAdmin" component={LoginAdmin} />
               <Route path="/homeAdmin" component={HomeAdmin} />
               <Route path="/Add" component={Add} />
+              <Route path="/edit/:id" component={Edit} />
+             
             </Switch>
           </div>
         </Router>
